@@ -2,6 +2,8 @@
 
 This project implements a **Rule-Based Audit System** using SQL to detect financial fraud patterns that often bypass real-time filters. It simulates a nightly batch process to identify **Structuring (Smurfing)** and **Velocity Abuse** in transaction logs.
 
+---
+
 ## 📂 Dataset: PaySim Simulation
 
 This project is built upon the schema of the **[PaySim Mobile Money Dataset](https://www.kaggle.com/datasets/ealaxi/paysim1)**.
@@ -14,6 +16,8 @@ This project is built upon the schema of the **[PaySim Mobile Money Dataset](htt
 > 1.  Replicates the exact PaySim schema (`step`, `type`, `amount`, `nameOrig`, etc.).
 > 2.  Injects specific adversarial patterns (Structuring & Bots) for validation.
 > 3.  Generates a lightweight **SQLite database** locally for immediate auditing.
+
+---
 
 ## 🕵️‍♂️ Audit Logic
 
@@ -31,6 +35,8 @@ The system executes the following checks against the `paysim_transactions` table
 - **Logic:** Count transactions per user per time-step (1 hour). Alert if **> 15 TXs/hour**.
 - **SQL Source:** `sql/2_velocity_alert.sql`
 
+---
+
 ## 💻 Sample Output
 
 When running the audit script, the system flags the following anomalies:
@@ -44,6 +50,8 @@ User_ID Tx_Count Total_Laundered
 [ALERT 2] Scanning for Velocity Abuse (>15 TXs/Hour)...
 User_ID Hour_Step Velocity_Count
 0 C_BOT_99 14 25
+
+---
 
 ## 🚀 How to Run
 
@@ -61,6 +69,8 @@ User_ID Hour_Step Velocity_Count
     ```
     _(Executes the SQL logic and prints the flagged users)_
 
+---
+
 ## 🛠️ Tech Stack
 
 - **Python:** Data Simulation & Orchestration
@@ -68,9 +78,9 @@ User_ID Hour_Step Velocity_Count
 - **Pandas:** Reporting & Data formatting
 - **SQL:** Aggregation & filtering logic
 
-## 📂 Project Structure
+---
 
-This project follows a modular architecture separating data, SQL logic, and Python execution scripts.
+## 📂 Project Structure
 
 02_SQL_Fraud_Audit/
 ├── data/
@@ -87,6 +97,8 @@ This project follows a modular architecture separating data, SQL logic, and Pyth
 │
 ├── README.md # Documentation
 └── requirements.txt # Project dependencies
+
+---
 
 **Santiago Torterolo**
 [LinkedIn Profile](https://linkedin.com/in/santiago-torterolo-5u)

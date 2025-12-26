@@ -2,6 +2,8 @@
 
 This project demonstrates an **Anti-Money Laundering (AML)** investigation framework. It leverages **Graph Theory (NetworkX)** and **SQL** to detect hidden "Smurfing" and "Structuring" patterns that traditional tabular analysis often misses.
 
+---
+
 ## 🔍 The Scenario: "The Smurfing Ring"
 
 A sophisticated money laundering scheme was suspected involving a classic 3-stage process:
@@ -9,6 +11,8 @@ A sophisticated money laundering scheme was suspected involving a classic 3-stag
 1.  **Placement:** Multiple "money mules" depositing small amounts (structuring) just below the $3,000 reporting threshold.
 2.  **Layering:** Funds being funneled into a single intermediate account to obscure their origin.
 3.  **Integration:** The aggregated total moving to a final beneficiary ("The Boss").
+
+---
 
 ## 📂 Project Structure
 
@@ -25,11 +29,13 @@ The project connects a SQL backend with a Python Graph visualizer.
 ├── README.md # Case documentation
 └── requirements.txt # Dependencies (networkx, matplotlib, etc.)
 
+---
+
 ## 📊 Forensic Evidence Analysis
 
 The script generated the following evidence graph, visualizing the flow of illicit funds:
 
-![Forensic Evidence Graph](./images/evidence_flow.png)
+![Forensic Evidence Graph](evidence_flow.png)
 
 ### How to Read this Graph:
 
@@ -40,6 +46,8 @@ The script generated the following evidence graph, visualizing the flow of illic
   - _Red Flag:_ Extremely high **In-Degree Centrality** (12 incoming connections) but only 1 outgoing connection. It acts as a funnel.
 - **⚫ The "Black" Target (The Boss):** Account `BOSS_ACC_001`.
   - _Red Flag:_ Receives the aggregated total (**€34,658**) in a single lump sum, completing the laundering cycle.
+
+---
 
 ## 🚀 How to Run this Investigation
 
@@ -61,7 +69,9 @@ The script generated the following evidence graph, visualizing the flow of illic
     ```
     python src/graph_analysis.py
     ```
-    _(Output image saved to: `images/evidence_flow.png`)_
+    _(Output image saved to: `evidence_flow.png`)_
+
+---
 
 ## 🛠️ Tech Stack
 
