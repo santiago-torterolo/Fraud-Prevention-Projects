@@ -1,4 +1,4 @@
-# Fraud Prevention Portfolio 🛡️
+# Fraud Prevention Projects 🛡️
 
 A collection of projects simulating real-world financial crime scenarios. Each folder contains a specific case study using public datasets (PaySim, Elliptic, etc.).
 
@@ -17,4 +17,3 @@ A collection of projects simulating real-world financial crime scenarios. Each f
 Check out my standalone **Fraud Detection Engine** deployed in production:
 👉 **[Athena Fraud Engine (XGBoost + Streamlit)](https://github.com/santiago-torterolo/Athena-Fraud-Detection)**
 
-# Fraud-Prevention-Portfolio
