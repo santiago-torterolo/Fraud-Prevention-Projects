@@ -19,14 +19,23 @@ A sophisticated money laundering scheme was suspected involving a classic 3-stag
 The project connects a SQL backend with a Python Graph visualizer.
 
 04_Forensic_Graph_Analysis/
+
 ├── images/
+
 │ └── evidence_flow.png # The generated evidence graph
+
 │
+
 ├── src/
+
 │ ├── setup_database.py # Generates synthetic Smurfing Ring data
+
 │ └── graph_analysis.py # Runs NetworkX algorithms & plotting
+
 │
+
 ├── README.md # Case documentation
+
 └── requirements.txt # Dependencies (networkx, matplotlib, etc.)
 
 ---
