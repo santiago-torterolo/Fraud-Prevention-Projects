@@ -51,15 +51,25 @@ The data is generated via a custom Python script (`src/generate_viz_data.py`) th
 ## 📂 Project Structure
 
 03_Executive_Risk_Dashboard/
+
 ├── data/
+
 │ └── executive_risk_data.csv # The primary dataset used for the dashboard
+
 ├── src/
+
 │ └── generate_viz_data.py # Python script for synthetic data generation
+
 ├── assets/
+
 │ ├── dashboard_preview.png # Screenshot of the final dashboard
+
 │ └── logical_diagram.png # Architecture of the risk model
+
 ├── Tableau/
+
 │ └── Executive_Risk_Workbook.twbx # Local backup of the Tableau workbook
+
 └── README.md # Project documentation
 
 ---
